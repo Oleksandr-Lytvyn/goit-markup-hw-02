@@ -10,27 +10,27 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <header>
       <nav>
-        <a class="logo link" href=""><span class="logo-blue">Web</span>Studio</a>
+        <a class="logo-header link" href=""><span class="logo-blue">Web</span>Studio</a>
         <ul class="list">
-          <li><a class="link nav-link" href="./index.html">Студия</a></li>
-          <li><a class="link nav-link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link nav-link" href="">Контакты</a></li>
+          <li><a class="link nav-link accent-link current" href="./index.html">Студия</a></li>
+          <li><a class="link nav-link accent-link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="link nav-link accent-link" href="">Контакты</a></li>
         </ul>
       </nav>
       <ul class="list">
-        <li><a class="link nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a class="link nav-link accent-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="link nav-link accent-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <!-- герой -->
-      <section>
+      <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="btn-order">Заказать услугу</button>
       </section>
@@ -77,25 +77,25 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <section>
+      <section class="team">
         <h class="title">Наша команда</h2>
         <ul class="list">
-          <li>
+          <li class="card">
             <img src="./images/4.jpg" alt="Игорь Демьяненко" width="270" />
             <h3 class="team-name">Игорь Демьяненко</h3>
             <p class="team-position">Product Designer</p>
           </li>
-          <li>
+          <li class="card">
             <img src="./images/5.jpg" alt="Ольга Репина" width="270" />
             <h3 class="team-name">Ольга Репина</h3>
             <p class="team-position">Frontend Developer</p>
           </li>
-          <li>
+          <li class="card">
             <img src="./images/6.jpg" alt="Николай Тарасов" width="270" />
             <h3 class="team-name">Николай Тарасов</h3>
             <p class="team-position">Marketing</p>
           </li>
-          <li>
+          <li class="card">
             <img src="./images/7.jpg" alt="Михаил Ермаков" width="270" />
             <h3 class="team-name">Михаил Ермаков</h3>
             <p class="team-position">UI Designer</p>
@@ -103,12 +103,12 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a class="logo link" href=""><span class="logo-blue">Web</span>Studio</a>
+    <footer class="footer">
+      <a class="logo-footer link" href=""><span class="logo-blue">Web</span>Studio</a>
       <address class="contacts-address">
         <ul class="list">
           <li>
-            <a class="address-text link"
+            <a class="address-text link accent-link"
               href="https://goo.gl/maps/NeGJWpVzxQ52QUaZA"
               target="_blank"
               rel="noopener nofollow noreferrer"
@@ -116,9 +116,9 @@
             >
           </li>
           <li>
-            <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+            <a class="address-link link accent-link" href="mailto:info@example.com">info@example.com</a>
           </li>
-          <li><a class="address-link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li><a class="address-link link accent-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
       </address>
     </footer>

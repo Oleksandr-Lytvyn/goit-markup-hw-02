@@ -1,8 +1,15 @@
 :root {
   --accent-color: #2196f3;
   --black-color: #212121;
+  --superblack-color: #000000;
+  --opacityblack-color: rgba(255, 255, 255, 0.6);
   --white-color: #ffffff;
   --grey-color: #757575;
+}
+
+.accent-link:hover,
+.accent-link:focus {
+  color: var(--accent-color);
 }
 
 body {
@@ -39,14 +46,14 @@ body {
 }
 
 /* ---------HEADER----------- */
-.logo {
+.logo-header {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--superblack-color);
 }
 
 .logo-blue {
@@ -69,19 +76,15 @@ body {
   color: var(--black-color);
 }
 
-.btn-order {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-
-  background-color: #757575;
+.nav-link.current {
+  color: var(--accent-color);
 }
 
 /* ------HERO-------- */
+
+.hero {
+  background-color: #212121;
+}
 
 .hero-title {
   font-weight: 900;
@@ -91,8 +94,17 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+}
 
-  background-color: #757575;
+.btn-order {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
 }
 
 /* ------BENEFITS-------- */
@@ -116,6 +128,14 @@ body {
 
 /* ---------TEAM---------- */
 
+.team {
+  background-color: #888888;
+}
+
+.card {
+  background-color: var(--white-color);
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -134,7 +154,20 @@ body {
   color: var(--grey-color);
 }
 
-/* ------PORTFOLIO-------- */
+/* ------PORTFOLIO-PAGE--------- */
+/* ------CATALOG-FILTER-------- */
+
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+
+/* ----------CATALOG------------ */
 
 .catalog-title {
   font-weight: 700;
@@ -154,6 +187,20 @@ body {
 
 /* ------FOOTER-------- */
 
+.footer {
+  background-color: var(--black-color);
+}
+
+.logo-footer {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
 .contacts-address {
   font-style: normal;
 }
@@ -166,14 +213,10 @@ body {
   color: var(--white-color);
 }
 
-.contacts-address {
-  background-color: black;
-}
-
 .address-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--opacityblack-color);
 }
